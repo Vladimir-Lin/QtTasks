@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NotifierTrigger</class>
+ <widget class="QWidget" name="NotifierTrigger">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Trigger</string>
+  </property>
+  <widget class="QPushButton" name="Okay">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>120</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Done</string>
+   </property>
+   <property name="statusTip">
+    <string>Done</string>
+   </property>
+   <property name="whatsThis">
+    <string>Done</string>
+   </property>
+   <property name="text">
+    <string>Done</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="NameEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>400</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Name</string>
+   </property>
+   <property name="statusTip">
+    <string>Name</string>
+   </property>
+   <property name="whatsThis">
+    <string>Name</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="IdEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>400</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Identifier</string>
+   </property>
+   <property name="statusTip">
+    <string>Identifier</string>
+   </property>
+   <property name="whatsThis">
+    <string>Identifier</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="MusicBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>400</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Music</string>
+   </property>
+   <property name="statusTip">
+    <string>Music</string>
+   </property>
+   <property name="whatsThis">
+    <string>Music</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <property name="maxVisibleItems">
+    <number>30</number>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Okay</sender>
+   <signal>clicked()</signal>
+   <receiver>NotifierTrigger</receiver>
+   <slot>Done()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>33</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>nRepeatedEvent</class>
+ <widget class="QWidget" name="nRepeatedEvent">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Repeated event</string>
+  </property>
+  <property name="toolTip">
+   <string>Repeated event</string>
+  </property>
+  <property name="statusTip">
+   <string>Repeated event</string>
+  </property>
+  <property name="whatsThis">
+   <string>Repeated event</string>
+  </property>
+  <widget class="QCheckBox" name="Repeat">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>160</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Repeated event</string>
+   </property>
+   <property name="statusTip">
+    <string>Repeated event</string>
+   </property>
+   <property name="whatsThis">
+    <string>Repeated event</string>
+   </property>
+   <property name="text">
+    <string>Repeated event</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Entry">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>10</y>
+     <width>280</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Start entry</string>
+   </property>
+   <property name="statusTip">
+    <string>Start entry</string>
+   </property>
+   <property name="whatsThis">
+    <string>Start entry</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="Browse">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Browse javascript</string>
+   </property>
+   <property name="statusTip">
+    <string>Browse javascript</string>
+   </property>
+   <property name="whatsThis">
+    <string>Browse javascript</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Images/CIOS.qrc">
+     <normaloff>:/images/OpenProject.png</normaloff>:/images/OpenProject.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Script">
+   <property name="geometry">
+    <rect>
+     <x>34</x>
+     <y>40</y>
+     <width>416</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Repeated event javascript</string>
+   </property>
+   <property name="statusTip">
+    <string>Repeated event javascript</string>
+   </property>
+   <property name="whatsThis">
+    <string>Repeated event javascript</string>
+   </property>
+   <property name="placeholderText">
+    <string>Repeated event javascript</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../Images/CIOS.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Browse</sender>
+   <signal>clicked()</signal>
+   <receiver>nRepeatedEvent</receiver>
+   <slot>Browse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>21</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

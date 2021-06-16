@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>nBriefEvent</class>
+ <widget class="QWidget" name="nBriefEvent">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Brief event editor</string>
+  </property>
+  <property name="toolTip">
+   <string>Brief event editor</string>
+  </property>
+  <property name="statusTip">
+   <string>Brief event editor</string>
+  </property>
+  <property name="whatsThis">
+   <string>Brief event editor</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:white;</string>
+  </property>
+  <widget class="QToolButton" name="Add">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>24</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Add event</string>
+   </property>
+   <property name="statusTip">
+    <string>Add event</string>
+   </property>
+   <property name="whatsThis">
+    <string>Add event</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Images/CIOS.qrc">
+     <normaloff>:/images/plus.png</normaloff>:/images/plus.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="Cancel">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>24</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Cancel</string>
+   </property>
+   <property name="statusTip">
+    <string>Cancel</string>
+   </property>
+   <property name="whatsThis">
+    <string>Cancel</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Images/CIOS.qrc">
+     <normaloff>:/images/ready.png</normaloff>:/images/ready.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Description">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>460</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Event description</string>
+   </property>
+   <property name="statusTip">
+    <string>Event description</string>
+   </property>
+   <property name="whatsThis">
+    <string>Event description</string>
+   </property>
+   <property name="placeholderText">
+    <string>Event description</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Type">
+   <property name="geometry">
+    <rect>
+     <x>192</x>
+     <y>24</y>
+     <width>268</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Event types</string>
+   </property>
+   <property name="statusTip">
+    <string>Event types</string>
+   </property>
+   <property name="whatsThis">
+    <string>Event types</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <property name="maxVisibleItems">
+    <number>30</number>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="Tab">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>48</y>
+     <width>460</width>
+     <height>232</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Brief event editor</string>
+   </property>
+   <property name="statusTip">
+    <string>Brief event editor</string>
+   </property>
+   <property name="whatsThis">
+    <string>Brief event editor</string>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::South</enum>
+   </property>
+   <property name="currentIndex">
+    <number>-1</number>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="tabBarAutoHide">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="Owner">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>48</x>
+     <y>24</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Event owner</string>
+   </property>
+   <property name="statusTip">
+    <string>Event owner</string>
+   </property>
+   <property name="whatsThis">
+    <string>Event owner</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Images/CIOS.qrc">
+     <normaloff>:/images/buddy.png</normaloff>:/images/buddy.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="Trigger">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>72</x>
+     <y>24</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Event trigger</string>
+   </property>
+   <property name="statusTip">
+    <string>Event trigger</string>
+   </property>
+   <property name="whatsThis">
+    <string>Event trigger</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Images/CIOS.qrc">
+     <normaloff>:/images/waves.png</normaloff>:/images/waves.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="Note">
+   <property name="geometry">
+    <rect>
+     <x>168</x>
+     <y>24</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>event note</string>
+   </property>
+   <property name="statusTip">
+    <string>event note</string>
+   </property>
+   <property name="whatsThis">
+    <string>event note</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Images/CIOS.qrc">
+     <normaloff>:/images/brush.png</normaloff>:/images/brush.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="Tasks">
+   <property name="geometry">
+    <rect>
+     <x>144</x>
+     <y>24</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Task owner</string>
+   </property>
+   <property name="statusTip">
+    <string>Task owner</string>
+   </property>
+   <property name="whatsThis">
+    <string>Task owner</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Images/CIOS.qrc">
+     <normaloff>:/images/task.png</normaloff>:/images/task.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="Dependency">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>96</x>
+     <y>24</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Event dependency</string>
+   </property>
+   <property name="statusTip">
+    <string>Event dependency</string>
+   </property>
+   <property name="whatsThis">
+    <string>Event dependency</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Images/CIOS.qrc">
+     <normaloff>:/images/interactive.png</normaloff>:/images/interactive.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="Repeat">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>24</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Repeated event</string>
+   </property>
+   <property name="statusTip">
+    <string>Repeated event</string>
+   </property>
+   <property name="whatsThis">
+    <string>Repeated event</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Images/CIOS.qrc">
+     <normaloff>:/images/refreshright.png</normaloff>:/images/refreshright.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../Images/CIOS.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Add</sender>
+   <signal>clicked()</signal>
+   <receiver>nBriefEvent</receiver>
+   <slot>Add()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>11</x>
+     <y>11</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>nBriefEvent</receiver>
+   <slot>Cancel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>11</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Description</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>nBriefEvent</receiver>
+   <slot>Description(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>241</x>
+     <y>11</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Type</sender>
+   <signal>activated(int)</signal>
+   <receiver>nBriefEvent</receiver>
+   <slot>EventType(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>241</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Owner</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>nBriefEvent</receiver>
+   <slot>Owner(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>59</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Trigger</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>nBriefEvent</receiver>
+   <slot>Trigger(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>83</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Note</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>nBriefEvent</receiver>
+   <slot>Note(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>107</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Tasks</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>nBriefEvent</receiver>
+   <slot>Tasks(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>107</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Dependency</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>nBriefEvent</receiver>
+   <slot>Dependency(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>107</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Repeat</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>nBriefEvent</receiver>
+   <slot>Repeat(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>131</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

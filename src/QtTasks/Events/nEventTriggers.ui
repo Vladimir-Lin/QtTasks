@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>nEventTriggers</class>
+ <widget class="QWidget" name="nEventTriggers">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>80</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Event triggers</string>
+  </property>
+  <property name="toolTip">
+   <string>Event triggers</string>
+  </property>
+  <property name="statusTip">
+   <string>Event triggers</string>
+  </property>
+  <property name="whatsThis">
+   <string>Event triggers</string>
+  </property>
+  <widget class="QComboBox" name="StartTrigger">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>440</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Start trigger</string>
+   </property>
+   <property name="statusTip">
+    <string>Start trigger</string>
+   </property>
+   <property name="whatsThis">
+    <string>Start trigger</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="FinishTrigger">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>440</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Finish trigger</string>
+   </property>
+   <property name="statusTip">
+    <string>Finish trigger</string>
+   </property>
+   <property name="whatsThis">
+    <string>Finish trigger</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

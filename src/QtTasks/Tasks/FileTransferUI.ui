@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileTransferUI</class>
+ <widget class="QTabWidget" name="FileTransferUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>File transfer settings</string>
+  </property>
+  <property name="toolTip">
+   <string>File transfer settings</string>
+  </property>
+  <property name="statusTip">
+   <string>File transfer settings</string>
+  </property>
+  <property name="whatsThis">
+   <string>File transfer settings</string>
+  </property>
+  <property name="tabPosition">
+   <enum>QTabWidget::South</enum>
+  </property>
+  <property name="currentIndex">
+   <number>0</number>
+  </property>
+  <widget class="QWidget" name="Script">
+   <attribute name="title">
+    <string>Script</string>
+   </attribute>
+   <widget class="QCheckBox" name="Scriptable">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>160</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Using javascript</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="BrowseJava">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/images/OpenProject.png</normaloff>:/images/OpenProject.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Javascript">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>40</y>
+      <width>316</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Javascript file</string>
+    </property>
+    <property name="statusTip">
+     <string>Javascript file</string>
+    </property>
+    <property name="whatsThis">
+     <string>Javascript file</string>
+    </property>
+    <property name="placeholderText">
+     <string>Javascript</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="Download">
+   <attribute name="title">
+    <string>Download</string>
+   </attribute>
+   <widget class="QLineEdit" name="DownloadURL">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>340</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Download URL</string>
+    </property>
+    <property name="statusTip">
+     <string>Download URL</string>
+    </property>
+    <property name="whatsThis">
+     <string>Download URL</string>
+    </property>
+    <property name="placeholderText">
+     <string>Download URL</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="BrowseSave">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Browse save file</string>
+    </property>
+    <property name="statusTip">
+     <string>Browse save file</string>
+    </property>
+    <property name="whatsThis">
+     <string>Browse save file</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/images/save.png</normaloff>:/images/save.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="SaveDownload">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>40</y>
+      <width>316</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Save downloaded file</string>
+    </property>
+    <property name="statusTip">
+     <string>Save downloaded file</string>
+    </property>
+    <property name="whatsThis">
+     <string>Save downloaded file</string>
+    </property>
+    <property name="placeholderText">
+     <string>Save to file</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="Upload">
+   <attribute name="title">
+    <string>Upload</string>
+   </attribute>
+   <widget class="QToolButton" name="BrowseOpen">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Browse upload file</string>
+    </property>
+    <property name="statusTip">
+     <string>Browse upload file</string>
+    </property>
+    <property name="whatsThis">
+     <string>Browse upload file</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/images/folder.png</normaloff>:/images/folder.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>24</width>
+      <height>24</height>
+     </size>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="OpenUpload">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>10</y>
+      <width>316</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Upload file</string>
+    </property>
+    <property name="statusTip">
+     <string>Upload file</string>
+    </property>
+    <property name="whatsThis">
+     <string>Upload file</string>
+    </property>
+    <property name="placeholderText">
+     <string>Upload file</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="UploadURL">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>340</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Upload URL</string>
+    </property>
+    <property name="statusTip">
+     <string>Upload URL</string>
+    </property>
+    <property name="whatsThis">
+     <string>Upload URL</string>
+    </property>
+    <property name="placeholderText">
+     <string>Upload URL</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Username">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>340</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Username</string>
+    </property>
+    <property name="statusTip">
+     <string>Username</string>
+    </property>
+    <property name="whatsThis">
+     <string>Username</string>
+    </property>
+    <property name="placeholderText">
+     <string>Upload username</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Password">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>340</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Password</string>
+    </property>
+    <property name="statusTip">
+     <string>Password</string>
+    </property>
+    <property name="whatsThis">
+     <string>Password</string>
+    </property>
+    <property name="placeholderText">
+     <string>Upload password</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Scriptable</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>FileTransferUI</receiver>
+   <slot>FtpState(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>91</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Javascript</sender>
+   <signal>editingFinished()</signal>
+   <receiver>FileTransferUI</receiver>
+   <slot>FtpChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>193</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DownloadURL</sender>
+   <signal>editingFinished()</signal>
+   <receiver>FileTransferUI</receiver>
+   <slot>FtpChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>181</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SaveDownload</sender>
+   <signal>editingFinished()</signal>
+   <receiver>FileTransferUI</receiver>
+   <slot>FtpChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>193</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>OpenUpload</sender>
+   <signal>editingFinished()</signal>
+   <receiver>FileTransferUI</receiver>
+   <slot>FtpChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>193</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>UploadURL</sender>
+   <signal>editingFinished()</signal>
+   <receiver>FileTransferUI</receiver>
+   <slot>FtpChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>181</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BrowseJava</sender>
+   <signal>clicked()</signal>
+   <receiver>FileTransferUI</receiver>
+   <slot>BrowseJava()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>23</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BrowseSave</sender>
+   <signal>clicked()</signal>
+   <receiver>FileTransferUI</receiver>
+   <slot>BrowseSave()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>23</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BrowseOpen</sender>
+   <signal>clicked()</signal>
+   <receiver>FileTransferUI</receiver>
+   <slot>BrowseOpen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>23</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Username</sender>
+   <signal>editingFinished()</signal>
+   <receiver>FileTransferUI</receiver>
+   <slot>FtpChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>181</x>
+     <y>83</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Password</sender>
+   <signal>editingFinished()</signal>
+   <receiver>FileTransferUI</receiver>
+   <slot>FtpChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>181</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

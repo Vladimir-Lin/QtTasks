@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>nEventTasks</class>
+ <widget class="QWidget" name="nEventTasks">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Event's Tasks</string>
+  </property>
+  <property name="toolTip">
+   <string>Event's Tasks</string>
+  </property>
+  <property name="statusTip">
+   <string>Event's Tasks</string>
+  </property>
+  <property name="whatsThis">
+   <string>Event's Tasks</string>
+  </property>
+  <widget class="QToolButton" name="Add">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>0</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Event join task</string>
+   </property>
+   <property name="statusTip">
+    <string>Event join task</string>
+   </property>
+   <property name="whatsThis">
+    <string>Event join task</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Images/CIOS.qrc">
+     <normaloff>:/images/plus.png</normaloff>:/images/plus.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="Remove">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Remove tasks from event</string>
+   </property>
+   <property name="statusTip">
+    <string>Remove tasks from event</string>
+   </property>
+   <property name="whatsThis">
+    <string>Remove tasks from event</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Images/CIOS.qrc">
+     <normaloff>:/images/removefiles.png</normaloff>:/images/removefiles.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Tasks">
+   <property name="geometry">
+    <rect>
+     <x>48</x>
+     <y>0</y>
+     <width>412</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Tasks</string>
+   </property>
+   <property name="statusTip">
+    <string>Tasks</string>
+   </property>
+   <property name="whatsThis">
+    <string>Tasks</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTreeWidget" name="Belongings">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>24</y>
+     <width>460</width>
+     <height>176</height>
+    </rect>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::ExtendedSelection</enum>
+   </property>
+   <property name="rootIsDecorated">
+    <bool>false</bool>
+   </property>
+   <column>
+    <property name="text">
+     <string notr="true">1</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../Images/CIOS.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Add</sender>
+   <signal>clicked()</signal>
+   <receiver>nEventTasks</receiver>
+   <slot>Add()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>11</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Remove</sender>
+   <signal>clicked()</signal>
+   <receiver>nEventTasks</receiver>
+   <slot>Remove()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>11</x>
+     <y>11</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Belongings</sender>
+   <signal>itemClicked(QTreeWidgetItem*,int)</signal>
+   <receiver>nEventTasks</receiver>
+   <slot>itemClicked(QTreeWidgetItem*,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>229</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
